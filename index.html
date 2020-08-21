@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RKGIT SIMULATOR</title>
+  <!--PAWAN PANDEY SIR (RKGIT),PULKIT BINDAL, SHIVANGI, SHAKSHAM AGGARWAL, SATYARTH SINGH-->
+  <link rel="stylesheet" href="simulator.css">
+  <script src="simulator.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="col-sm-12" style="text-align:center">
+      <h2>
+        <p class="white-text-with-blue-shadow" align="center">SIMULATION FOR LINEAR SEARCH USING PYTHON
+        </p>
+      </h2>
+    </div>
+    <div class="left">
+      <h1 style="color:red;">
+        <center>Demo: Linear Search</center>
+      </h1>
+
+      <div class="card">2</div>
+
+      <div class="card">4</div>
+
+      <div class="card">6</div>
+
+      <div class="card">8</div>
+
+      <div class="card">10</div>
+
+      <div class="card">12</div>
+
+      <div class="card">14</div>
+
+      <div class="card">16</div>
+      <div class="number" style="
+      padding-bottom: 43px;
+  ">
+        <font><label><b><strong id="ntbs">Element to be Searched&nbsp;&nbsp;</strong></b></label></font> <input
+          type="text" id="search" name="search" style="width :66px; outline: none;">
+      </div>
+      <h3><button onclick="srchFunct()" class="sbtn" style="width :100px; float:left; margin-left:80px">Start</button>
+      </h3>
+
+      <h3><button onclick="rstFunct()" class="sbtn" style="width :100px;">Reset</button> </h3>
+      <p id="rslt" style="display:none"></p>
+    </div>
+
+
+    <div class="main">
+      <h1 style="color:red;">
+        <center>Simulator</center>
+      </h1>
+      <h3 style="color:black" ;>&nbsp;&nbsp;(Select Check Box for Step by Step Functioning)</h3>
+      <h3>
+        <input type="checkbox" class="checkbox" id="check1" onclick="showFunc1()">
+        <label for="content1">No. of Elements in Array&nbsp;&nbsp;</label>
+        <input type="text" id="in1" placeholder="No. of Elements" style="outline: none;" disabled>
+        <br>
+        <input type="checkbox" class="checkbox" id="check2" onclick="showFunc2()">
+        <label for="content2">Elements of
+          Array&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="in2" placeholder="1,2,3,4" style="outline: none;" disabled="disabled">
+        <br>
+        <input type="checkbox" class="checkbox" id="check3" onclick="showFunc3()">
+        <label for="content3">Element to be Searched&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="in3" placeholder="Element to be search" style="outline: none;" disabled="disabled">
+        <button onclick="myFunction()" class="sbtn">Search Element</button>
+        <button onclick="rstFunctsimulator()" class="sbtn">Reset</button>
+      </h3>
+      <h2>
+        <div id="result" style="
+      width: 400px;
+      height: 34px;
+      color:blue;
+      font-size: x-large;
+      text-align:center;
+      
+    
+    "></div>
+      </h2>
+    </div>
+
+  </div>
+
+  <div class="right">
+
+    <h1 style="color: red;">
+      <center></center>
+    </h1>
+    <div class="inst1">plist = [] <br>number = int(input("Num of Elements in Array
+      ")) </div>
+
+    <div class="inst2">for i in range(0,number):<br>&nbsp;&nbsp;emt=int(input())<br>&nbsp;&nbsp;plist.append(emt)<br>
+    </div>
+
+    <div class="inst3">searchItem=int(input('Element you want to search: '))</div>
+
+    <div class="inst4">found = False<br>for i in range(len(plist)):<br>&nbsp;&nbsp;if plist[i] ==
+      searchItem:<br>&nbsp;&nbsp;&nbsp;&nbsp;found = True<br>&nbsp;&nbsp;&nbsp;&nbsp;print('Great..Element found at
+      position',i+1)<br>&nbsp;&nbsp;&nbsp;&nbsp;break
+    </div>
+
+    <div class="inst5">if found == False:<br>&nbsp;&nbsp;print("Element not found")</div>
+  </div>
+
+  </div>
+
+</body>
+
+</html>
